@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQLAlchemy-Challenge</title>
+</head>
+<body>
+
+Welome:
+
+<hr style="border-color: black;">
+<p>
+    These are the static route for my website
+    <ul>
+    <li><a href="{{ url_for('precipitation') }}">/api/v1.0/precipitation</a><ul><li>it retrieves only the last 12 months of data to a dictionary using date as the key and prcp as the value.</li></ul></li>
+    <li><a href="{{ url_for('stations') }}">/api/v1.0/stations</a><ul><li>Return a JSON list of stations from the dataset.</li></ul></li>
+    <li><a href="{{ url_for('tobs') }}">/api/v1.0/tobs</a><ul><li> it return the temperature observations of the most-active station for the previous year of data in json list format.</li></ul></li>
+</ul>
+</p>
+
+<hr style="border-color: black;">
+<p>The Dynamic routes of my website look like this:</p>
+    <ul><li>/api/v1.0/start_date </li>
+    <li>/api/v1.0/start_date/end_date </li>
+    </ul>
+
+
+</body>
+</html>
